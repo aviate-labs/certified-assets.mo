@@ -13,7 +13,7 @@ We may just extend this into a motoko package that can be imported or inherited 
 $ dfx start --background
 $ dfx deploy -network=local
 $ dfx deploy --network=ic
-$ dfx generate asset_backend
+$ dfx generate asset_canister
 ```
 
 ## Resources
