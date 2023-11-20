@@ -5,7 +5,13 @@ let Package =
 let
   -- This is where you can add your own packages to the package-set
   additions =
-    [] : List Package
+    [
+      { name = "http"
+      , version = "v0.1.2"
+      , repo = "https://github.com/aviate-labs/http.mo"
+      , dependencies = [] : List Text
+      }
+    ] : List Package
 
 let
   {- This is where you can override existing packages in the package-set
