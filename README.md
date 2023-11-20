@@ -6,14 +6,26 @@ There is a good chance it will be [replaced](https://github.com/dfinity/grant-rf
 
 We may just extend this into a motoko package that can be imported or ~~inherited~~ *motoko does not have inheritance* by other canisters.
 
+Explore the example canister:
+<https://jr6if-gyaaa-aaaag-qctcq-cai.icp0.io/>
+
 
 ## Usage
+
+You'll probably have to run with the latest moc compiler version because dfx is being weird.
 
 ```bash
 $ dfx start --background
 $ dfx deploy -network=local
 $ dfx deploy --network=ic
+$ DFX_MOC_PATH="$(vessel bin)/moc" dfx deploy --network=ic
 $ dfx generate asset_canister
+$ dfx stop
+```
+
+```bash
+# Compile
+$ $(vessel bin)/moc $(vessel sources 2>/dev/null) -r src/asset_canister/main.mo
 ```
 
 ## Resources
