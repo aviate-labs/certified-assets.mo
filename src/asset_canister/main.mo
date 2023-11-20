@@ -1,4 +1,4 @@
 
-actor class () {
+actor class AssetCanister() {
 
 }
